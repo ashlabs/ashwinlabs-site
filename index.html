@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashwin Labs | Applied AI, Product Strategy, and Technical Leadership</title>
-  <meta name="description" content="Ashwin Labs — Applied AI, product strategy, and technical leadership focused on turning ambiguous AI ideas into useful systems and measurable outcomes." />
+  <title>Ashwin Labs | Applied AI, Product Strategy, and Technical Product Leadership</title>
+  <meta name="description"
+    content="Ashwin Labs — Applied AI, product strategy, and technical product leadership portfolio for Ashwin Parthasarathy, focused on AI systems, product execution, and measurable business impact." />
   <style>
     :root {
       --bg: #0f172a;
@@ -19,7 +21,9 @@
       --max: 1120px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -32,7 +36,10 @@
       line-height: 1.6;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .container {
       width: min(100% - 40px, var(--max));
@@ -69,7 +76,9 @@
       font-size: 0.95rem;
     }
 
-    .nav-links a:hover { color: var(--text); }
+    .nav-links a:hover {
+      color: var(--text);
+    }
 
     .hero {
       padding: 96px 0 72px;
@@ -91,7 +100,7 @@
     h1 {
       font-size: clamp(2.7rem, 6vw, 5.4rem);
       line-height: 0.95;
-      letter-spacing: -0.075em;
+      letter-spacing: 0em;
       margin: 0 0 28px;
     }
 
@@ -127,28 +136,30 @@
 
     .button.secondary {
       color: var(--text);
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
     }
 
     .profile-card {
       border: 1px solid var(--border);
-      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.035));
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.035));
       border-radius: 28px;
       padding: 28px;
-      box-shadow: 0 24px 80px rgba(0,0,0,0.32);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
     }
 
     .avatar {
       width: 96px;
       height: 96px;
       border-radius: 28px;
-      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      /* background: linear-gradient(135deg, var(--accent), var(--accent-2)); */
+      background: linear-gradient(135deg, #38bdf8 0%, #7c3aed 100%);
       display: grid;
       place-items: center;
       color: #020617;
-      font-size: 2.2rem;
-      font-weight: 900;
+      font-size: 2rem;
+      font-weight: 800;
       margin-bottom: 24px;
+      letter-spacing: -0.02em;
     }
 
     .card-title {
@@ -157,7 +168,10 @@
       margin-bottom: 8px;
     }
 
-    .card-text { color: var(--muted); margin-bottom: 22px; }
+    .card-text {
+      color: var(--muted);
+      margin-bottom: 22px;
+    }
 
     .stat-grid {
       display: grid;
@@ -172,10 +186,19 @@
       padding: 16px;
     }
 
-    .stat strong { display: block; font-size: 1.35rem; }
-    .stat span { color: var(--subtle); font-size: 0.88rem; }
+    .stat strong {
+      display: block;
+      font-size: 1.35rem;
+    }
 
-    section { padding: 72px 0; }
+    .stat span {
+      color: var(--subtle);
+      font-size: 0.88rem;
+    }
+
+    section {
+      padding: 72px 0;
+    }
 
     .section-head {
       max-width: 760px;
@@ -185,11 +208,14 @@
     h2 {
       font-size: clamp(2rem, 4vw, 3.2rem);
       line-height: 1;
-      letter-spacing: -0.06em;
+      letter-spacing: 0em;
       margin: 0 0 16px;
     }
 
-    .section-head p { color: var(--muted); font-size: 1.08rem; }
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
 
     .grid-3 {
       display: grid;
@@ -198,7 +224,7 @@
     }
 
     .tile {
-      background: rgba(255,255,255,0.045);
+      background: rgba(255, 255, 255, 0.045);
       border: 1px solid var(--border);
       border-radius: 24px;
       padding: 24px;
@@ -209,7 +235,10 @@
       font-size: 1.12rem;
     }
 
-    .tile p { color: var(--muted); margin: 0; }
+    .tile p {
+      color: var(--muted);
+      margin: 0;
+    }
 
     .timeline {
       display: grid;
@@ -223,12 +252,22 @@
       padding: 24px;
       border: 1px solid var(--border);
       border-radius: 24px;
-      background: rgba(255,255,255,0.04);
+      background: rgba(255, 255, 255, 0.04);
     }
 
-    .timeline-date { color: var(--accent); font-weight: 800; }
-    .timeline-item h3 { margin: 0 0 8px; }
-    .timeline-item p { color: var(--muted); margin: 0; }
+    .timeline-date {
+      color: var(--accent);
+      font-weight: 800;
+    }
+
+    .timeline-item h3 {
+      margin: 0 0 8px;
+    }
+
+    .timeline-item p {
+      color: var(--muted);
+      margin: 0;
+    }
 
     .projects {
       display: grid;
@@ -241,13 +280,81 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: linear-gradient(180deg, rgba(255,255,255,0.065), rgba(255,255,255,0.035));
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.035));
       border: 1px solid var(--border);
       border-radius: 26px;
       padding: 26px;
     }
 
-    .project-card p { color: var(--muted); }
+    .project-card p {
+      color: var(--muted);
+    }
+
+    .project-feature {
+      grid-column: 1 / -1;
+      min-height: 360px;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 28px;
+      align-items: stretch;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 28rem),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0.035));
+      border: 1px solid var(--border);
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.18);
+    }
+
+    .project-kicker {
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .project-feature h3 {
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
+      line-height: 1.08;
+      margin: 0 0 16px;
+    }
+
+    .project-feature p {
+      color: var(--muted);
+      margin: 0 0 18px;
+      font-size: 1.03rem;
+    }
+
+    .project-metrics {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .metric-card {
+      background: rgba(15, 23, 42, 0.58);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 18px;
+    }
+
+    .metric-card strong {
+      display: block;
+      font-size: 1.5rem;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .metric-card span {
+      color: var(--subtle);
+      font-size: 0.9rem;
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+    }
 
     .tag-row {
       display: flex;
@@ -265,13 +372,15 @@
     }
 
     .writing-card {
-      background: rgba(255,255,255,0.045);
+      background: rgba(255, 255, 255, 0.045);
       border: 1px solid var(--border);
       border-radius: 26px;
       padding: 30px;
     }
 
-    .writing-card p { color: var(--muted); }
+    .writing-card p {
+      color: var(--muted);
+    }
 
     footer {
       padding: 48px 0 70px;
@@ -280,17 +389,104 @@
     }
 
     @media (max-width: 860px) {
-      .hero, .grid-3, .projects { grid-template-columns: 1fr; }
-      .timeline-item { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
+
+      .hero,
+      .grid-3,
+      .projects,
+      .project-feature {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-item {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* .brand{
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: -0.01em;
+    }
+
+    .brand:hover{
+      opacity: 0.9;
+    }
+
+    .logo-icon{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      border: 1.5px solid transparent;
+      background: linear-gradient(135deg, #38bdf8, #a78bfa);
+      color: #0b1220;
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text{
+      background: linear-gradient(135deg, #38bdf8, #a78bfa);
+      -webkit-background-clip: text;
+      background-clip:text;
+      color: transparent;
+    } */
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.15rem;
+    }
+
+    .logo-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 10px;
+      border: 1.5px solid transparent;
+      background: linear-gradient(135deg, #38bdf8, #7c3aed);
+      color: #020617;
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text {
+      letter-spacing: -0.02em;
+    }
+
+    .labs {
+      background: linear-gradient(135deg, #38bdf8, #7c3aed);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand:hover {
+      opacity: 0.9;
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="container">
       <nav>
-        <a class="brand" href="#">Ashwin Labs</a>
+        <a class="brand" href="/">
+          <span class="logo-icon" aria-label="AshwinLabs home">AL</span>
+          <span class="brand-text">Ashwin<span class="labs">Labs</span></span>
+        </a>
         <div class="nav-links">
           <a href="#work">Work</a>
           <a href="#projects">Projects</a>
@@ -307,7 +503,8 @@
         <div class="eyebrow">Applied AI · Product Strategy · Technical Leadership</div>
         <h1>Turning ambiguous AI ideas into systems that actually work.</h1>
         <p class="lead">
-          I’m Ashwin — a technical product leader with deep engineering roots, focused on applied machine learning and AI systems that move beyond demos into real-world impact.
+          I’m Ashwin Parthasarathy — a technical product leader with 20+ years across Amazon, Google, Microsoft, and
+          technology consulting, focused on applied AI systems that move beyond demos into measurable business impact.
         </p>
         <div class="cta-row">
           <a class="button primary" href="#projects">Explore My Work</a>
@@ -317,10 +514,11 @@
       </div>
 
       <aside class="profile-card">
-        <div class="avatar">A</div>
-        <div class="card-title">Senior PM-T · AI Systems · Builder</div>
+        <div class="avatar">AL</div>
+        <div class="card-title">Senior PM-T · Applied AI · Product Systems</div>
         <p class="card-text">
-          I translate ambiguous business problems into AI systems that can be built, evaluated, and trusted.
+          I translate ambiguous business problems into AI products and systems that can be built, evaluated, launched,
+          and trusted.
         </p>
         <div class="stat-grid">
           <div class="stat"><strong>20+</strong><span>Years in engineering</span></div>
@@ -335,20 +533,23 @@
     <section class="container">
       <div class="section-head">
         <h2>Recent impact</h2>
-        <p>A few signals of the kind of practical, outcome-focused AI and product work I care about.</p>
+        <p>Selected proof points from applied AI, developer productivity, data systems, and product execution.</p>
       </div>
       <div class="grid-3">
         <div class="tile">
-          <h3>ML-driven product decisions</h3>
-          <p>Led development of machine learning models to improve product lifecycle decisions, reduce inefficiencies, and drive measurable cost impact.</p>
+          <h3>$14M+ AI/ML business impact</h3>
+          <p>Led development of a machine learning model for product end-of-life prediction, creating $1M in annual
+            selection-monitoring savings and enabling $13M in incremental worldwide PCOGS.</p>
         </div>
         <div class="tile">
-          <h3>AI systems thinking</h3>
-          <p>Focused on model evaluation, data quality, and real-world deployment challenges rather than treating model performance as the whole story.</p>
+          <h3>Agentic AI for sourcing traceability</h3>
+          <p>Led development of an AI agent that helped retail teams understand the rationale behind sourcing decisions
+            and reduced KTLO overhead by 50% for the Sourcing Optimization team.</p>
         </div>
         <div class="tile">
-          <h3>Hands-on learning</h3>
-          <p>Actively building and documenting ML systems across computer vision, model evaluation, and applied AI workflows.</p>
+          <h3>Developer productivity at scale</h3>
+          <p>Led and built tools, metrics, and data pipelines across Google and Microsoft, including debugging systems,
+            adoption metrics, and enterprise-scale AI-driven product search.</p>
         </div>
       </div>
     </section>
@@ -356,20 +557,25 @@
     <section id="work" class="container">
       <div class="section-head">
         <h2>Where I create leverage</h2>
-        <p>I focus on problems where product judgment, technical depth, and execution discipline all have to come together — especially in AI systems where the hardest problems are not just technical.</p>
+        <p>I focus on problems where product judgment, technical depth, and execution discipline all have to come
+          together — especially in AI systems where the hardest problems are often product, data, workflow, and adoption
+          problems.</p>
       </div>
       <div class="grid-3">
         <div class="tile">
           <h3>AI Product Strategy</h3>
-          <p>Identifying high-value AI opportunities, clarifying the customer problem, and shaping roadmaps that connect technical possibility to real business outcomes.</p>
+          <p>Identifying high-value AI opportunities, clarifying the customer problem, and shaping roadmaps that connect
+            technical possibility to real business outcomes.</p>
         </div>
         <div class="tile">
           <h3>ML Systems Thinking</h3>
-          <p>Looking beyond model scores into data quality, evaluation, failure modes, human workflows, and the operational reality of deploying machine learning.</p>
+          <p>Looking beyond model scores into data quality, evaluation, failure modes, human workflows, and the
+            operational reality of deploying machine learning.</p>
         </div>
         <div class="tile">
           <h3>Execution Leadership</h3>
-          <p>Driving cross-functional work across engineering, science, business, and operations teams with clear ownership, crisp trade-offs, and measurable outcomes.</p>
+          <p>Driving cross-functional work across engineering, science, business, and operations teams with clear
+            ownership, crisp trade-offs, and measurable outcomes.</p>
         </div>
       </div>
     </section>
@@ -377,28 +583,40 @@
     <section class="container">
       <div class="section-head">
         <h2>Professional narrative</h2>
-        <p>My career has moved from building systems, to leading products, to applying AI in ways that are practical enough to ship and valuable enough to matter.</p>
+        <p>My career has moved from building systems, to leading products, to applying AI in ways that are practical
+          enough to ship and valuable enough to matter.</p>
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-date">Foundation</div>
+          <div class="timeline-date">Amazon</div>
           <div>
-            <h3>Engineering depth</h3>
-            <p>Built a long technical foundation across engineering delivery, systems thinking, software practices, and operational problem-solving.</p>
+            <h3>Applied AI for retail decision systems</h3>
+            <p>Currently leading technical product work on ML and agentic AI systems, including product lifecycle
+              prediction and sourcing traceability for retail teams.</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">Product</div>
+          <div class="timeline-date">Google</div>
           <div>
-            <h3>Technical product leadership</h3>
-            <p>Moved into product roles focused on translating business problems into technical strategy, roadmap decisions, and delivered outcomes.</p>
+            <h3>Developer productivity, metrics, and platform adoption</h3>
+            <p>Built adoption metrics, optimized data pipelines, and led product work for developer tooling, debugging,
+              framework convergence, and large-scale engineering productivity.</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-date">Now</div>
+          <div class="timeline-date">Microsoft</div>
           <div>
-            <h3>Applied AI and ML systems</h3>
-            <p>Focused on building, evaluating, and explaining AI systems — not just at the model level, but as full product and operational systems.</p>
+            <h3>AI-driven commerce products</h3>
+            <p>Led end-to-end development of Bing for Commerce’s AI-driven Product Search, from concept and executive
+              sponsorship through pilot launch and customer integration.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">Earlier</div>
+          <div>
+            <h3>Architecture, consulting, and emerging technology</h3>
+            <p>Led architecture and technology strategy across IoT, automotive, smart assistants, precision agriculture,
+              emergency response systems, and enterprise cloud solutions.</p>
           </div>
         </div>
       </div>
@@ -407,34 +625,66 @@
     <section id="projects" class="container">
       <div class="section-head">
         <h2>Selected projects</h2>
-        <p>A few examples of the kind of hands-on work and thinking I’m building in public.</p>
+        <p>Work that shows how I think: frame the problem clearly, understand the system around it, and build toward measurable outcomes.</p>
       </div>
       <div class="projects">
+        <article class="project-feature">
+          <div>
+            <div class="project-kicker">Flagship case study</div>
+            <h3>Applied AI for product lifecycle and sourcing decisions</h3>
+            <p>
+              Led technical product work on ML and agentic AI systems for retail decision-making: predicting product end-of-life, improving selection monitoring, and helping teams understand the rationale behind sourcing decisions.
+            </p>
+            <p>
+              This is the type of AI work I’m most interested in: not a demo, not a model in isolation, but a decision system that has to connect data quality, model behavior, business workflow, explainability, and operational adoption.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Applied AI</span>
+              <span class="tag">Agentic AI</span>
+              <span class="tag">ML Product Strategy</span>
+              <span class="tag">Retail Systems</span>
+            </div>
+          </div>
+          <div class="project-metrics">
+            <div class="metric-card">
+              <strong>$1M</strong>
+              <span>Annual savings in selection monitoring</span>
+            </div>
+            <div class="metric-card">
+              <strong>$13M</strong>
+              <span>Incremental worldwide PCOGS enabled</span>
+            </div>
+            <div class="metric-card">
+              <strong>50%</strong>
+              <span>KTLO overhead reduction for sourcing optimization</span>
+            </div>
+            <div class="metric-card">
+              <strong>AI + Product</strong>
+              <span>Model behavior connected to real decision workflows</span>
+            </div>
+          </div>
+        </article>
+
         <article class="project-card">
           <div>
-            <h3>Machine Learning Learning Lab</h3>
-            <p>A growing collection of hands-on ML projects and explainers covering model evaluation, computer vision, transfer learning, and the practical habits needed to understand model behavior.</p>
+            <h3>Machine Learning Lab</h3>
+            <p>A hands-on learning lab where I build and document ML projects across model evaluation, computer vision, transfer learning, and the practical habits needed to understand model behavior.</p>
           </div>
           <div class="tag-row"><span class="tag">Python</span><span class="tag">Scikit-learn</span><span class="tag">PyTorch</span></div>
         </article>
+
         <article class="project-card">
           <div>
             <h3>AI Blog & Notes System</h3>
-            <p>A public knowledge base where I turn hands-on learning into practical, story-driven explanations of machine learning, AI systems, and technical product judgment.</p>
+            <p>A public knowledge base where I turn hands-on learning into story-driven explanations of machine learning, AI systems, evaluation trade-offs, and technical product judgment.</p>
           </div>
           <div class="tag-row"><span class="tag">Writing</span><span class="tag">Obsidian</span><span class="tag">Quartz</span></div>
         </article>
-        <article class="project-card">
-          <div>
-            <h3>Job Agent System</h3>
-            <p>An automation-oriented project for collecting, scoring, ranking, and prioritizing job opportunities using structured evaluation and AI-assisted workflows.</p>
-          </div>
-          <div class="tag-row"><span class="tag">Agents</span><span class="tag">Automation</span><span class="tag">Ranking</span></div>
-        </article>
+
         <article class="project-card">
           <div>
             <h3>Robotics & FLL Tools</h3>
-            <p>Experiments in robot navigation, test harnesses, grid-based movement, and engineering practices for FIRST LEGO League robot programming.</p>
+            <p>Experiments in robot navigation, test harnesses, grid-based movement, and engineering practices for FIRST LEGO League robot programming and team learning.</p>
           </div>
           <div class="tag-row"><span class="tag">Python</span><span class="tag">Pybricks</span><span class="tag">Robotics</span></div>
         </article>
@@ -444,12 +694,15 @@
     <section id="writing" class="container">
       <div class="section-head">
         <h2>Writing</h2>
-        <p>I write to clarify my own thinking and explain technical topics in a way that preserves the depth without making the reader feel lost.</p>
+        <p>I write to clarify my own thinking and explain technical topics in a way that preserves the depth without
+          making the reader feel lost.</p>
       </div>
       <div class="writing-card">
         <h3>Latest focus: machine learning from the inside out</h3>
         <p>
-          My current writing series walks through machine learning concepts through actual moments of confusion, debugging, and discovery — from misleading accuracy metrics to cross-validation, regularization, model selection, and production thinking.
+          My current writing series walks through machine learning concepts through actual moments of confusion,
+          debugging, and discovery — from misleading accuracy metrics to cross-validation, regularization, model
+          selection, and production thinking.
         </p>
         <a class="button secondary" href="https://notes.ashwinlabs.com/">Visit notes.ashwinlabs.com</a>
       </div>
@@ -459,7 +712,8 @@
       <div class="section-head">
         <h2>Let’s connect</h2>
         <p>
-          I work on applied AI, ML product strategy, and technical leadership problems where ideas need to become real systems.
+          I work on applied AI, ML product strategy, developer productivity, and technical leadership problems where
+          ideas need to become real systems.
         </p>
       </div>
       <div class="cta-row">
@@ -471,7 +725,9 @@
   </main>
 
   <footer>
-    <div class="container">© 2026 Ashwin Labs. Built as a practical portfolio for applied AI, product strategy, and technical leadership.</div>
+    <div class="container">© 2026 Ashwin Labs. Built as a practical portfolio for applied AI, product strategy, and
+      technical leadership.</div>
   </footer>
 </body>
+
 </html>
